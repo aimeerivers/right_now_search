@@ -8,7 +8,7 @@ class TwitterSearchScraper extends Scraper {
 
   function scrape($query) {
     // get a page of results
-    $page = scrape_page("http://search.twitter.com/search.json?rpp=20&q=" . urlencode($query));
+    $page = scrape_page("http://search.twitter.com/search.json?rpp=20&q=" . $query);
     
     $results = json_decode($page);
 

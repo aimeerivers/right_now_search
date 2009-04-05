@@ -8,7 +8,7 @@ class GoogleUkScraper extends Scraper {
 
   function scrape($query) {
     // get a page of results
-    $page = scrape_page("http://www.google.co.uk/search?hl=en&num=20&q=" . urlencode($query));
+    $page = scrape_page("http://www.google.co.uk/search?hl=en&num=20&q=" . $query);
 
     // get a list of organic SE links
     preg_match("/<li class=g>(.*)<\/cite>/", $page, $matches);

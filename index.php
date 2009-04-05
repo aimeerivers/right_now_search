@@ -18,6 +18,7 @@
       include('classes/GoogleUkScraper.php');
       include('classes/GoogleNewsScraper.php');
       include('classes/TwitterSearchScraper.php');
+      include('classes/TechnoratiScraper.php');
     ?>
 
     <div id='search_options'>
@@ -39,6 +40,9 @@
         
         $googlenews = new GoogleNewsScraper;
         $googlenews->fetchAndDisplayResults($_GET['q']);
+        
+        $technorati = new TechnoratiScraper;
+        $technorati->fetchAndDisplayResults($_GET['q']);
       ?>
         
     </div>

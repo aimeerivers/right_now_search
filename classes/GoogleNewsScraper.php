@@ -7,7 +7,7 @@ class GoogleNewsScraper extends Scraper {
   }
 
   function scrape($query) {
-    $page = scrape_page("http://news.google.com/news?um=1&ned=us&hl=en&output=atom&q=" . urlencode($query));
+    $page = scrape_page("http://news.google.com/news?um=1&ned=us&hl=en&output=atom&q=" . $query);
 
     $doc = new SimpleXmlElement($page, LIBXML_NOCDATA);
     
