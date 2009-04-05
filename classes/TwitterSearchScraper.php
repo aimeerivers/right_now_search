@@ -16,7 +16,7 @@ class TwitterSearchScraper extends Scraper {
   }
   
   function showResult($result) {
-    echo "<li><img src='" . $result->{'profile_image_url'} . "' class='avatar' /><p>" . $result->{'text'} . "</p><p>- <a href='http://twitter.com/" . $result->{'from_user'} . "/status/" . $result->{'id'} . "'>" . $result->{'from_user'} . "</a></p></li>";
+    echo "<li><img src='" . $result->{'profile_image_url'} . "' class='avatar' /><p>" . $result->{'text'} . "</p><p>- <a href='http://twitter.com/" . $result->{'from_user'} . "/status/" . $result->{'id'} . "'>" . $result->{'from_user'} . "</a> <small>" . $result->{'created_at'} . "</small></p></li>";
   }
 
 }

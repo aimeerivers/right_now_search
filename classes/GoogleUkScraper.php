@@ -1,6 +1,6 @@
 <?php
 
-class GoogleUKScraper extends Scraper {
+class GoogleUkScraper extends Scraper {
 
   function name() {
     return "Google UK";

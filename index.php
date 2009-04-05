@@ -16,6 +16,7 @@
       include('lib/scrape_page.php');
       include('classes/Scraper.php');
       include('classes/GoogleUkScraper.php');
+      include('classes/GoogleNewsScraper.php');
       include('classes/TwitterSearchScraper.php');
     ?>
 
@@ -35,6 +36,9 @@
         
         $googleuk = new GoogleUkScraper;
         $googleuk->fetchAndDisplayResults($_GET['q']);
+        
+        $googlenews = new GoogleNewsScraper;
+        $googlenews->fetchAndDisplayResults($_GET['q']);
       ?>
         
     </div>
