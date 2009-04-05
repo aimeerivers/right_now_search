@@ -1,11 +1,13 @@
 Right Now Search
 
-I wanted something where you can search across multiple sites (Twitter, Google Blogs, Technorati, etc) from one search page, to get a real feel for the current 'buzz'.
+I wanted something where you can search across multiple sites (Twitter, Google Blogs, Technorati, etc) from one search page to get a real feel for the current 'buzz'.
 
 Other people have done greasemonkey scripts, but i wanted something a little different. So i decided to make my own.
 
-Try it out for yourself here: http://tinyurl.com/rightnowsearch
+Try it out for yourself here: http://tinyurl.com/rightnowsearch or download the source code and use it locally yourself. It's MIT licence, so do whatever you like with it!
 
-Or download the source code and use it locally yourself.
+I need to style it nicely and put in Ajax auto updaters. I'm intending for it to have search sites like plugins so that you can turn on and off the ones you want, and it should be easy to add new ones.
 
-I need to style it nicely and put in Ajax auto updaters. Any help would be massively appreciated!
+Any help would be massively appreciated!
+
+Acknowledgements to TweetDeck and PivotalTracker for the columns inspiration.

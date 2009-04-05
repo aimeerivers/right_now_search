@@ -33,20 +33,15 @@
     <div id='results'>
     
       <?php
-        $twitter = new TwitterSearchScraper;
-        $twitter->fetchAndDisplayResults($_GET['q']);
+        $scrapers[] = new TwitterSearchScraper;
+        $scrapers[] = new GoogleUkScraper;
+        $scrapers[] = new GoogleNewsScraper;
+        $scrapers[] = new GoogleBlogScraper;
+        $scrapers[] = new TechnoratiScraper;
         
-        $googleuk = new GoogleUkScraper;
-        $googleuk->fetchAndDisplayResults($_GET['q']);
-        
-        $googlenews = new GoogleNewsScraper;
-        $googlenews->fetchAndDisplayResults($_GET['q']);
-        
-        $googleblog = new GoogleBlogScraper;
-        $googleblog->fetchAndDisplayResults($_GET['q']);
-        
-        $technorati = new TechnoratiScraper;
-        $technorati->fetchAndDisplayResults($_GET['q']);
+        foreach($scrapers as $scraper) {
+          $scraper ->fetchAndDisplayResults($_GET['q']);
+        }
       ?>
         
     </div>
