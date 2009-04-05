@@ -16,6 +16,7 @@
       include('lib/scrape_page.php');
       include('classes/Scraper.php');
       include('classes/GoogleUkScraper.php');
+      include('classes/TwitterSearchScraper.php');
     ?>
 
     <div id='search_options'>
@@ -29,6 +30,9 @@
     <div id='results'>
     
       <?php
+        $twitter = new TwitterSearchScraper;
+        $twitter->fetchAndDisplayResults($_GET['q']);
+        
         $googleuk = new GoogleUkScraper;
         $googleuk->fetchAndDisplayResults($_GET['q']);
       ?>

@@ -13,7 +13,7 @@ em {
 #search_options {
   text-align: center;
   background-color: #eee;
-  height: 100px;  
+  padding: 1em;
 }
 
 #search_options label, #search_options input {
@@ -25,10 +25,11 @@ em {
 
 .results_column {
   float: left;
-  padding: 1em;
+  padding: 0.5em;
   background-color: #ddd;
   width: 300px;
   border: 2px solid #888;
+  margin: 2px;
 }
 
 .results_column ul {
@@ -39,4 +40,11 @@ em {
 .results_column li {
   border-bottom: 2px solid #888;
   margin-bottom: 1em;
+}
+
+.avatar {
+  float: right;
+  padding-left: 5px;
+  width: 40px;
+  height: 40px;
 }

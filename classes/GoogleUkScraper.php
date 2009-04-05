@@ -23,7 +23,7 @@ class GoogleUKScraper extends Scraper {
   }
   
   function showResult($result) {
-    echo "<li><a href='" . $result[1] . "'>" . $result[3] . "</a><p>" . $result[4] . "</p></li>";
+    echo "<li><p><a href='" . $result[1] . "'>" . $result[3] . "</a></p><p>" . $result[4] . "</p></li>";
   }
 
 }
