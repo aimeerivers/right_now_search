@@ -30,6 +30,7 @@ class Scraper {
   }
   
   function fetchAndDisplayResults($query) {
+    if($query == '') { return ""; }
     $results = $this->scrape(urlencode($query));
     $this->showResults($results);
   }
