@@ -1,0 +1,42 @@
+body {
+  font-family: 'Lucida Grande',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+#search_options {
+  text-align: center;
+  background-color: #eee;
+  height: 100px;  
+}
+
+#search_options label, #search_options input {
+  font-size: 2em;
+}
+
+
+
+
+.results_column {
+  float: left;
+  padding: 1em;
+  background-color: #ddd;
+  width: 300px;
+  border: 2px solid #888;
+}
+
+.results_column ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.results_column li {
+  border-bottom: 2px solid #888;
+  margin-bottom: 1em;
+}
