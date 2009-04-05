@@ -7,7 +7,7 @@ class TechnoratiScraper extends Scraper {
   }
 
   function scrape($query) {
-    $page = scrape_page("http://feeds.technorati.com/search/" . $query . "?language=n");
+    $page = scrape_page("http://feeds.technorati.com/search/" . $query . "?language=en");
 
     $doc = new SimpleXmlElement($page, LIBXML_NOCDATA);
     
