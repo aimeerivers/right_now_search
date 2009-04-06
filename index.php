@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
   <head>
-    <title>Right Now Search</title>
+    <title>Right Now Search <?php if($_GET['q'] != '') { echo "- " . stripslashes($_GET['q']); } ?></title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
