@@ -21,10 +21,12 @@
       include('classes/TwitterSearchScraper.php');
       include('classes/TechnoratiScraper.php');
     ?>
+    
+    <a href="http://github.com/sermoa/right_now_search"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
 
     <div id='search_options'>
       <form method='get'>
-        <label for='search_input'>Search:</label>
+        <label for='search_input'>Search for:</label>
         <input type='text' id='search_input' name='q' value='<?php echo stripslashes($_GET['q']); ?>' />
         <input type='submit' value='Go!' />
       </form>
