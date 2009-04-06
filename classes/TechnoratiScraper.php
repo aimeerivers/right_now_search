@@ -2,9 +2,8 @@
 
 class TechnoratiScraper extends Scraper {
 
-  function name() {
-    return "Technorati";
-  }
+    protected $name = 'Technorati Search';
+
 
   function scrape($query) {
     $page = scrape_page("http://feeds.technorati.com/search/" . $query . "?language=en");

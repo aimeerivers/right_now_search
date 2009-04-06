@@ -2,9 +2,8 @@
 
 class GoogleNewsScraper extends Scraper {
 
-  function name() {
-    return "Google News";
-  }
+   protected $name = 'Google News Search';
+
 
   function scrape($query) {
     $page = scrape_page("http://news.google.com/news?um=1&ned=us&hl=en&output=atom&q=" . $query);

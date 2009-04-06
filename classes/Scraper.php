@@ -1,22 +1,20 @@
 <?php
 
-class Scraper {
-
-  function name() {
-    return "Generic Scraper";
-  }
-
-  function scrape($query) {
-    die('must be overridden');
+class Scraper implements Scraper_Interface{
+  
+  protected $name = "Generic Scraper";
+  
+  public static function factory($type) {
+    return new $type;
   }
   
-  function showResult($results) {
-    die('must be overridden');
+  public function scrape($query) {
+    
   }
   
   function showResults($results) {
     echo "<div class='results_column'>";
-    echo "<h2>" . $this->name() . "</h2>";
+    echo "<h2>" . $this->name . "</h2>";
     echo "<ul>";
     if(count($results) == 0) {
       echo "<ul>No results found.</ul>";

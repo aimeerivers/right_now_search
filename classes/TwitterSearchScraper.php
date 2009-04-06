@@ -2,10 +2,8 @@
 
 class TwitterSearchScraper extends Scraper {
 
-  function name() {
-    return "Twitter Search";
-  }
-
+  protected $name = 'Twitter Search';
+  
   function scrape($query) {
     // get a page of results
     $page = scrape_page("http://search.twitter.com/search.json?rpp=20&q=" . $query);

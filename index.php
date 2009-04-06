@@ -13,7 +13,9 @@
   
   <body>
     <?php
+    
       include('lib/scrape_page.php');
+      include('classes/Scraper_Interface.php');
       include('classes/Scraper.php');
       include('classes/GoogleUkScraper.php');
       include('classes/GoogleNewsScraper.php');
@@ -35,11 +37,11 @@
     <div id='results'>
     
       <?php
-        $scrapers[] = new TwitterSearchScraper;
-        $scrapers[] = new GoogleUkScraper;
-        $scrapers[] = new GoogleNewsScraper;
-        $scrapers[] = new GoogleBlogScraper;
-        $scrapers[] = new TechnoratiScraper;
+        $scrapers[] = Scraper::factory('TwitterSearchScraper');
+        $scrapers[] = Scraper::factory('GoogleUkScraper');
+        $scrapers[] = Scraper::factory('GoogleNewsScraper');
+        $scrapers[] = Scraper::factory('GoogleBlogScraper');
+        $scrapers[] = Scraper::factory('TechnoratiScraper');
         
         foreach($scrapers as $scraper) {
           $scraper ->fetchAndDisplayResults($_GET['q']);

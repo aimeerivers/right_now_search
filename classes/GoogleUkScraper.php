@@ -2,9 +2,8 @@
 
 class GoogleUkScraper extends Scraper {
 
-  function name() {
-    return "Google UK";
-  }
+    protected $name = 'Google UK Search';
+
 
   function scrape($query) {
     // get a page of results

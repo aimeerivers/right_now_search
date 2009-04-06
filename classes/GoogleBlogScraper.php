@@ -2,9 +2,8 @@
 
 class GoogleBlogScraper extends Scraper {
 
-  function name() {
-    return "Google Blog Search";
-  }
+  protected $name = 'Google Blog Search';
+
 
   function scrape($query) {
     $page = scrape_page("http://blogsearch.google.com/blogsearch_feeds?hl=en&num=10&output=atom&q=" . $query);
