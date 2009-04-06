@@ -1,6 +1,6 @@
 <?php
 
-class TwitterSearchScraper extends Scraper {
+class TwitterSearchScraper extends Scraper implements Scraper_Interface {
 
   protected $name = 'Twitter Search';
   

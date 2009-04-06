@@ -1,6 +1,6 @@
 <?php
 
-class GoogleBlogScraper extends Scraper {
+class GoogleBlogScraper extends Scraper implements Scraper_Interface {
 
   protected $name = 'Google Blog Search';
 

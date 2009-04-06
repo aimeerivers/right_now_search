@@ -1,6 +1,6 @@
 <?php
 
-class TechnoratiScraper extends Scraper {
+class TechnoratiScraper extends Scraper implements Scraper_Interface {
 
     protected $name = 'Technorati Search';
 

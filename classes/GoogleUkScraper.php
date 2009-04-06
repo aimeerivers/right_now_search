@@ -1,6 +1,6 @@
 <?php
 
-class GoogleUkScraper extends Scraper {
+class GoogleUkScraper extends Scraper implements Scraper_Interface {
 
     protected $name = 'Google UK Search';
 

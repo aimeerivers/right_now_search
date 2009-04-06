@@ -1,6 +1,6 @@
 <?php
 
-class GoogleNewsScraper extends Scraper {
+class GoogleNewsScraper extends Scraper implements Scraper_Interface {
 
    protected $name = 'Google News Search';
 

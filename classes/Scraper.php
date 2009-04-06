@@ -1,15 +1,11 @@
 <?php
 
-class Scraper implements Scraper_Interface{
+class Scraper {
   
   protected $name = "Generic Scraper";
   
   public static function factory($type) {
     return new $type;
-  }
-  
-  public function scrape($query) {
-    
   }
   
   function showResults($results) {
