@@ -20,7 +20,12 @@ em {
   font-size: 2em;
 }
 
-
+#forkme {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
 
 
 .results_column {

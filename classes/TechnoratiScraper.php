@@ -1,22 +1,14 @@
 <?php
+/**
+ * Technorati scraper
+ *
+ * @author Russell Smith <russell.smith@ukd1.co.uk>
+ */
+class TechnoratiScraper extends RSSScraper {
 
-class TechnoratiScraper extends Scraper implements Scraper_Interface {
+	protected $name = 'Technorati Search';
 
-    protected $name = 'Technorati Search';
-
-
-  function scrape($query) {
-    $page = scrape_page("http://feeds.technorati.com/search/" . $query . "?language=en");
-
-    $doc = new SimpleXmlElement($page, LIBXML_NOCDATA);
-    
-    return $doc->channel->item;
-  }
-  
-  function showResult($result) {
-    echo "<li><p><a href='" . $result->link . "'>" . $result->title . "</a></p><p>" . $result->description . "</p><p><small>" . $result->pubDate . "</small></p></li>";
-  }
-
+	function __construct () {
+		parent::__construct ('http://feeds.technorati.com/search/%s?language=en');
+	}
 }
-
-?>
