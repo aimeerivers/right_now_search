@@ -47,7 +47,7 @@ function __autoload ($class) {
 		<?php
 		if (isset($_GET['q']) && trim($_GET['q']) != '')
 		{
-			$scrapers[] = new IdenticaScraper;
+			// $scrapers[] = new IdenticaScraper;
 			$scrapers[] = new TwitterSearchScraper;
 			$scrapers[] = new GoogleUkScraper;
 			$scrapers[] = new GoogleNewsScraper;
